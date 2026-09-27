@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chiheb — Frontend Developer</title>
+  <title>Jones White — Frontend Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -30,16 +30,13 @@
     a { color: var(--gold); text-decoration: none; transition: color 0.2s; }
     a:hover { color: var(--green); }
 
-    /* === Scrollbar === */
     ::-webkit-scrollbar { width: 8px; }
     ::-webkit-scrollbar-track { background: var(--navy); }
     ::-webkit-scrollbar-thumb { background: var(--light-navy); border-radius: 4px; }
     ::-webkit-scrollbar-thumb:hover { background: var(--slate); }
 
-    /* === Container === */
     .container { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
 
-    /* === Header / Hero === */
     header {
       min-height: 100vh;
       display: flex;
@@ -95,7 +92,6 @@
       border-color: var(--green);
     }
 
-    /* === Section === */
     section { padding: 80px 0; }
     .section-title {
       display: flex;
@@ -118,7 +114,6 @@
       font-size: 18px;
     }
 
-    /* === About === */
     .about-grid {
       display: grid;
       grid-template-columns: 1fr 240px;
@@ -140,9 +135,6 @@
       font-weight: 500;
       color: var(--gold);
     }
-    .about-image {
-      position: relative;
-    }
     .about-image .frame {
       width: 100%;
       aspect-ratio: 1;
@@ -153,7 +145,6 @@
       justify-content: center;
       border: 2px solid var(--gold);
       overflow: hidden;
-      position: relative;
     }
     .about-image .initials {
       font-size: 64px;
@@ -162,35 +153,6 @@
       user-select: none;
     }
 
-    /* === Experience === */
-    .job {
-      display: grid;
-      grid-template-columns: 140px 1fr;
-      gap: 24px;
-      margin-bottom: 40px;
-      padding: 24px;
-      border-radius: 8px;
-      transition: background 0.2s;
-    }
-    .job:hover { background: var(--light-navy); }
-    .job .date { font-size: 13px; font-weight: 500; color: var(--slate); white-space: nowrap; }
-    .job .role { font-size: 18px; font-weight: 600; color: var(--light-slate); margin-bottom: 4px; }
-    .job .company { font-size: 14px; color: var(--gold); margin-bottom: 12px; }
-    .job .desc { font-size: 15px; }
-    .job .desc ul { list-style: none; }
-    .job .desc ul li {
-      position: relative;
-      padding-left: 20px;
-      margin-bottom: 8px;
-    }
-    .job .desc ul li::before {
-      content: '▸';
-      position: absolute;
-      left: 0;
-      color: var(--gold);
-    }
-
-    /* === Projects === */
     .project-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -224,7 +186,6 @@
       color: var(--gold);
     }
 
-    /* === Contact === */
     #contact {
       text-align: center;
       padding: 120px 0;
@@ -241,7 +202,6 @@
       font-size: 16px;
     }
 
-    /* === Footer === */
     footer {
       text-align: center;
       padding: 24px 0 48px;
@@ -249,11 +209,9 @@
       color: var(--slate);
     }
 
-    /* === Responsive === */
     @media (max-width: 768px) {
       .about-grid { grid-template-columns: 1fr; }
       .about-image { display: none; }
-      .job { grid-template-columns: 1fr; gap: 8px; }
       header { min-height: auto; }
     }
   </style>
@@ -265,12 +223,11 @@
     <!-- ============ HERO ============ -->
     <header>
       <div class="overline">Hi, my name is</div>
-      <h1>Chiheb.</h1>
+      <h1>Jones White.</h1>
       <h2>I build things for the web.</h2>
       <p>
-        I'm a frontend developer specializing in crafting performant,
-        accessible, and visually polished user interfaces. Currently focused
-        on building marketplaces and interactive web experiences.
+        Frontend developer focused on clean UI, performance, and
+        accessibility — with a sharp eye for cybersecurity UX.
       </p>
       <a href="#contact" class="cta-btn">Get in touch &rarr;</a>
     </header>
@@ -281,62 +238,25 @@
       <div class="about-grid">
         <div class="about-text">
           <p>
-            I'm a Tunisian frontend developer with a passion for building
-            clean, responsive, and user-centric interfaces. My journey into
-            web development started with curiosity about how modern sites
-            work — and grew into a full craft.
+            I'm a frontend developer who bridges design and security. I build
+            interfaces that are not only pixel-perfect but hardened — input
+            sanitization, CSP-ready markup, authentication UIs, and audit-logged
+            dashboards.
           </p>
           <p>
-            I focus on writing semantic HTML, modular CSS, and JavaScript
-            that <em>actually</em> runs well — on any device, in any browser.
-            I bring design systems to life, optimize rendering performance,
-            and care deeply about accessibility and developer experience.
+            Every project gets semantic HTML, modular CSS, and predictable JS.
+            No bloat, no surprises.
           </p>
           <div class="tech-list">
             <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
             <span>TypeScript</span><span>React</span><span>Next.js</span>
-            <span>Tailwind</span><span>Figma</span><span>Git</span>
-            <span>Django</span><span>Flutter</span><span>Playwright</span>
+            <span>Tailwind</span><span>CSP</span><span>OAuth</span>
+            <span>Figma</span><span>Git</span><span>Playwright</span>
           </div>
         </div>
         <div class="about-image">
           <div class="frame">
-            <span class="initials">CH</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ EXPERIENCE ============ -->
-    <section id="experience">
-      <h2 class="section-title"><span class="num">02.</span>Experience</h2>
-
-      <div class="job">
-        <div class="date">2024 — Present</div>
-        <div>
-          <div class="role">Frontend Developer</div>
-          <div class="company">EuroSouk — E-Commerce Marketplace</div>
-          <div class="desc">
-            <ul>
-              <li>Built a fully responsive marketplace UI with navy/gold design system, compact card layouts, and live search overlay.</li>
-              <li>Implemented session-based cart flow, COD checkout, and order tracking — all without user login.</li>
-              <li>Designed and deployed worker portal with real-time order management and fulfillment dashboard.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="job">
-        <div class="date">2023 — 2024</div>
-        <div>
-          <div class="role">Mobile Developer</div>
-          <div class="company">Flutter Projects</div>
-          <div class="desc">
-            <ul>
-              <li>Developed cross-platform mobile applications using Flutter and Dart with camera, permissions, and native platform integration.</li>
-              <li>Integrated RESTful APIs, state management (Provider/Bloc), and local storage for offline-capable apps.</li>
-              <li>Focused on pixel-perfect UI replication from Figma designs to Flutter widget trees.</li>
-            </ul>
+            <span class="initials">JW</span>
           </div>
         </div>
       </div>
@@ -344,7 +264,7 @@
 
     <!-- ============ PROJECTS ============ -->
     <section id="projects">
-      <h2 class="section-title"><span class="num">03.</span>Projects</h2>
+      <h2 class="section-title"><span class="num">02.</span>Projects</h2>
       <div class="project-grid">
 
         <div class="project-card">
@@ -354,9 +274,9 @@
               <a href="#" target="_blank" title="GitHub"><svg viewBox="0 0 24 24" fill="var(--gold)"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
             </div>
           </div>
-          <h3>EuroSouk</h3>
-          <p>Full-featured e-commerce marketplace with live search, session cart, worker dashboard, and S3 media storage.</p>
-          <div class="tags"><span>HTML</span><span>CSS</span><span>Django</span><span>SQLite</span></div>
+          <h3>PhishShield</h3>
+          <p>Real-time phishing detection dashboard — scans impersonation domains and flags lookalike login pages with visual threat indicators.</p>
+          <div class="tags"><span>React</span><span>CSP</span><span>Chart.js</span><span>API</span></div>
         </div>
 
         <div class="project-card">
@@ -366,9 +286,9 @@
               <a href="#" target="_blank" title="GitHub"><svg viewBox="0 0 24 24" fill="var(--gold)"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
             </div>
           </div>
-          <h3>CV — Frontend Dev</h3>
-          <p>This responsive CV page — dark navy + gold design system, custom CSS, zero framework overhead.</p>
-          <div class="tags"><span>HTML</span><span>CSS</span><span>Responsive</span></div>
+          <h3>VaultPass</h3>
+          <p>Zero-knowledge credential manager with encrypted storage, password health scoring, and breach-check integration via HIBP.</p>
+          <div class="tags"><span>TypeScript</span><span>WebCrypto</span><span>HIBP</span><span>PWA</span></div>
         </div>
 
         <div class="project-card">
@@ -378,9 +298,33 @@
               <a href="#" target="_blank" title="GitHub"><svg viewBox="0 0 24 24" fill="var(--gold)"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
             </div>
           </div>
-          <h3>Flutter Mobile Apps</h3>
-          <p>Cross-platform mobile apps with camera integration, REST APIs, and polished UI from Figma designs.</p>
-          <div class="tags"><span>Flutter</span><span>Dart</span><span>Firebase</span></div>
+          <h3>LogWatch</h3>
+          <p>Security event viewer — parses syslog and auditd streams into a searchable UI with real-time alerts, timeline scrubbing, and export.</p>
+          <div class="tags"><span>Next.js</span><span>WebSocket</span><span>D3</span><span>WASM</span></div>
+        </div>
+
+        <div class="project-card">
+          <div class="folder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>
+            <div class="links">
+              <a href="#" target="_blank" title="GitHub"><svg viewBox="0 0 24 24" fill="var(--gold)"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+            </div>
+          </div>
+          <h3>FireWall UI</h3>
+          <p>Rule management interface for iptables/nftables — visual rule builder, traffic graph, hit count, and one-click block/allow toggles.</p>
+          <div class="tags"><span>React</span><span>D3</span><span>REST</span><span>SSE</span></div>
+        </div>
+
+        <div class="project-card">
+          <div class="folder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>
+            <div class="links">
+              <a href="#" target="_blank" title="GitHub"><svg viewBox="0 0 24 24" fill="var(--gold)"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+            </div>
+          </div>
+          <h3>C2 Monitor</h3>
+          <p>Command & control traffic visualizer — geolocation heatmap of beaconing IPs, IoC matching, and timeline-based drill-down.</p>
+          <div class="tags"><span>TypeScript</span><span>Mapbox</span><span>WebSocket</span><span>D3</span></div>
         </div>
 
       </div>
@@ -390,17 +334,16 @@
     <section id="contact">
       <h2>Get in touch</h2>
       <p>
-        I'm currently looking for frontend opportunities. Whether you have a
-        project, a question, or just want to say hi — my inbox is always open.
+        Working on a security-conscious frontend project? Let's talk.
       </p>
-      <a href="mailto:chiheb@example.com" class="cta-btn">Say hello &rarr;</a>
+      <a href="mailto:jones.white@example.com" class="cta-btn">Say hello &rarr;</a>
     </section>
 
   </div>
 
   <footer>
     <div class="container">
-      Designed &amp; built by Chiheb &middot; &copy; 2026
+      Designed &amp; built by Jones White &middot; &copy; 2026
     </div>
   </footer>
 
